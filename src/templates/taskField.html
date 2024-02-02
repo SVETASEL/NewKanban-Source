@@ -1,0 +1,62 @@
+<div class="container-kanban">
+  <div class="kanban-heading">
+    <h2 class="kanban-heading-text">Awesome Kanban Board</h2>
+    <div class="user-menu">
+      <span class="name-user"></span>
+      <img
+        src="/src/images/user-avatar.png"
+        class="img-user"
+        alt="Аватар пользователя"
+      />
+      <nav class="dropdown-user-menu">
+        <button class="button-menu">
+          <img src="../images/svg/s_arrow-down.svg" alt="Шеврон" />
+        </button>
+        <ul class="menu"></ul>
+      </nav>
+    </div>
+  </div>
+  <div class="kanban-board">
+    <div class="kanban-block">
+      <span>Backlog</span>
+      <div class="swim-lane dropdown-task-backlog" id="backlog"></div>
+      <form class="task-button-block" id="todo-form">
+        <input
+          type="text"
+          class="input-task-backlog"
+          placeholder="Enter your tasks here..."
+          id="todo-input"
+        />
+        <button class="button-add-backlog" type="submit">+ Add card</button>
+      </form>
+    </div>
+    <div class="kanban-block">
+      <span>Ready</span>
+      <div class="swim-lane dropdown-task-ready" id="ready"></div>
+    </div>
+    <div class="kanban-block">
+      <span>In Progress</span>
+      <div class="swim-lane dropdown-task-progress" id="in-progress"></div>
+    </div>
+    <div class="kanban-block">
+      <span>Finished</span>
+      <div class="swim-lane dropdown-task-finished" id="finished"></div>
+    </div>
+  </div>
+</div>
+<div class="kanban-footer-task">
+  <div class="tasks">
+    <div class="kanban-active-task">
+      Active tasks: <span class="backlog-length"></span>
+    </div>
+    <div class="kanban-finished-task">
+      Finished tasks: <span class="finished-length"></span>
+    </div>
+  </div>
+  <div class="tasks-name">
+    <div class="kanban-name-task">
+      Kanban board by S. Selivanova <span class="name-footer"></span>, 2024
+      <span class="year-footer"></span>
+    </div>
+  </div>
+</div>
